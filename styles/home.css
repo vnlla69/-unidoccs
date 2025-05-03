@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: .01fr 1fr;
+    height: 100vh;
+}
+header {
+    grid-area: header;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    max-width: 25%;
+    height: auto;
+    width: 100px;
+    display: block;
+}
+.logo img{
+    max-height: 100px;
+    width: auto;
+    display: block;
+}
+
+/* Navigation styles */
+.sidebar {
+    grid-area: nav;
+    width: 210px;
+    background-color: #34495e;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: width 0.3s ease-in-out;
+}
+.sidebar-header div img {
+    max-width: 50%;
+    height: auto;
+    width: 100px; 
+    display: block;
+}
+.sidebar .menu li{
+    width: 100%;
+    max-width: 150px;
+}
+.sidebar .menu li a{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/* Sidebar collapses settings*/
+.sidebar.collapsed {
+    width: 80px;
+}
+.sidebar.collapsed .sidebar-header h1 {
+    position: absolute;
+    right: -80px;
+}
+.sidebar.collapsed .text {
+    opacity: 0;
+    pointer-events: none;
+}
+/* Ending collapsed*/
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 10px;
+}
+.sidebar-header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+}
+.toggle-btn {
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.toggle-btn:hover {
+    background-color: #2980b9;
+}
+.sidebar ul {
+    padding: 10px 0px;
+}
+.sidebar ul .active {
+    color: #fff;
+}
+.sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+    margin: 10px;
+}
+.sidebar li:hover {
+    background-color: #2980b9;
+}
+.sidebar .icon {
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+.sidebar .text {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 22px;
+    transition: 0.4s;
+}
+
+/* go to dashboard edit button */
+.auth-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.auth-btn {
+    display: flex;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.auth-btn:hover {
+    background-color: #07324e;
+}
+
+/*main-dashboard*/
+main {
+    grid-area: main;
+    display: flex !important; 
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    background-color: #d3d3d3;
+    height: calc(100vh - 80px); 
+    overflow: hidden;
+}
+.user-info {
+    flex: 1; 
+    max-width: 100%;
+    max-height: fit-content;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "intro intro"
+    "identification documents"
+    ;
+}
+.intro{
+    grid-area: intro;
+}
+.id-card{
+    grid-area: identification;
+}
+.documents{
+    grid-area: documents;
+}
+.documents-section {
+    flex: 1; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* ID Card Styling */
+.id-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 550px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+.id-header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.id-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.id-logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.id-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.personal-info {
+    flex: 1;
+    padding-right: 20px;
+}
+.info-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.info-label {
+    font-weight: bold;
+    color: #555;
+    display: inline-block;
+    width: 80px;
+}
+.info-value {
+    color: #333;
+    flex: 1;
+}
+.id-photo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.id-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.id-footer {
+    padding: 12px 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+.id-notice {
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* Documents grid layout */
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+/* Header section within documents */
+.documents-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+/* Document card styling */
+.document-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    transition: all 0.2s ease;
+    border-left: 4px solid #3498db;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.document-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        overflow: visible;
+    }
+
+    .user-info {
+        max-width: 100%;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 3px solid #ddd;
+    }
+
+    .documents-section {
+        max-width: 100%;
+    }
+}

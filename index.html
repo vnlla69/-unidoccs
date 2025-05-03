@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIDOCCS - Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/landing.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">UNIDOCCS</div>
+        <div class="auth-section">
+            <a href="home.html" class="auth-btn">Go to App</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Secure Your Documents on the Blockchain</h1>
+            <p>UNIDOCCS provides tamper-proof storage and easy verification of your important credentials and documents using blockchain technology.</p>
+            <div class="cta-buttons">
+                <a href="home.html" class="cta-button cta-primary">
+                    <i class="fas fa-rocket"></i> Get Started
+                </a>
+                <button id="learnMoreBtn" class="cta-button cta-secondary">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Video Section (Hidden by default) -->
+    <section id="videoSection" class="video-section">
+        <div class="video-container">
+            <h2 class="video-title">How Blockchain Works</h2>
+            <p class="video-description">Watch this short video to understand how blockchain secures your documents using blockchain technology and provides tamper-proof verification.</p>
+            
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/6WG7D47tGb0?si=GuKDKd7qmboJMygz" title="UNIDOCCS Explainer Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <button id="closeVideoBtn" class="close-video">
+                <i class="fas fa-times"></i> Close Video
+            </button>
+        </div>
+    </section>
+
+    <!--divider-->
+    <div class="wavy-divider">
+        <svg viewBox="0 0 1200 150" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#2c3e50" />
+              <stop offset="100%" stop-color="#2a9eeb" />
+            </linearGradient>
+          </defs>
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="url(#waveGradient)"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="url(#waveGradient)"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="url(#waveGradient)"></path>
+        </svg>
+      </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <div class="section-title">
+                <h2>Why Choose UNIDOCCS?</h2>
+                <p>Our platform offers convenience for managing your important documents</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Tamper-Proof Security</h3>
+                    <p>Leverage blockchain technology to ensure your documents cannot be altered or forged, providing indisputable proof of authenticity.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Decentralized Storage</h3>
+                    <p>Your documents are stored across a distributed network, eliminating single points of failure and ensuring permanent availability and immutability.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Instant Verification</h3>
+                    <p>Anyone can verify the authenticity of your documents in seconds without needing to contact issuing institutions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Academic Credentials</h3>
+                    <p>Perfect for students and professionals to store diplomas, certificates, and transcripts with permanent verification.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Professional Documents</h3>
+                    <p>Securely store licenses, certifications, and work records that employers can instantly verify.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Wallet Integration</h3>
+                    <p>Connect your Web3 wallet for seamless access and true ownership of your credentials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--divider-->
+<div class="thin-wave-divider">
+    <svg viewBox="0 0 1200 30" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="thinWaveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2c3e50" />
+          <stop offset="100%" stop-color="#2a9eeb" />
+        </linearGradient>
+      </defs>
+      <path d="M0,15 C150,15 150,5 300,5 C450,5 450,15 600,15 C750,15 750,5 900,5 C1050,5 1050,15 1200,15 Z" 
+            fill="none" 
+            stroke="url(#thinWaveGradient)" 
+            stroke-width="2" />
+    </svg>
+  </div>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="steps-container">
+            <div class="section-title">
+                <h2>How UNIDOCCS Works</h2>
+                <p>Getting started with secure document management is simple</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Upload Your Documents</h3>
+                        <p>Easily upload your academic credentials, professional certificates, or any important documents through our intuitive interface.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Secure on Blockchain</h3>
+                        <p>We create a unique digital fingerprint (hash) of your document and store it permanently on the blockchain network.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Share When Needed</h3>
+                        <p>Generate verification links or QR codes to share your documents with employers, institutions, or anyone who needs to verify them.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Instant Verification</h3>
+                        <p>Recipients can instantly verify the authenticity and integrity of your documents against the blockchain record.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--divider-->
+    <div class="thin-wave-divider">
+        <svg viewBox="0 0 1200 30" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="thinWaveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#2c3e50" />
+              <stop offset="100%" stop-color="#2a9eeb" />
+            </linearGradient>
+          </defs>
+          <path d="M0,15 C150,15 150,5 300,5 C450,5 450,15 600,15 C750,15 750,5 900,5 C1050,5 1050,15 1200,15 Z" 
+                fill="none" 
+                stroke="url(#thinWaveGradient)" 
+                stroke-width="2" />
+        </svg>
+      </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-title">
+                <h2>What Our Users Say</h2>
+                <p>Trusted by students and professionals worldwide</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-content">UNIDOCCS has revolutionized how I manage my academic credentials. No more worrying about lost documents or verification delays.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JS</div>
+                        <div class="author-info">
+                            <h4>Anon</h4>
+                            <p>Computer Science Graduate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-content">As an HR professional, verifying credentials used to take days. Now with UNIDOCCS, I can verify documents in seconds with complete confidence.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>Anon</h4>
+                            <p>HR Director</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-content">I've stored all my professional certifications on UNIDOCCS. It's so convenient to share verifiable copies with potential employers.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AP</div>
+                        <div class="author-info">
+                            <h4>Anon</h4>
+                            <p>IT Professional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--divider-->
+    <div class="wavy-divider-flip">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#2c3e50" />
+              <stop offset="100%" stop-color="#2a9eeb" />
+            </linearGradient>
+          </defs>
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="url(#waveGradient)"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="url(#waveGradient)"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="url(#waveGradient)"></path>
+        </svg>
+      </div>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <h2>Ready to Secure Your Documents?</h2>
+        <p>Join thousands of users who trust UNIDOCCS for permanent, verifiable document storage on the blockchain.</p>
+        <div class="cta-buttons">
+            <a href="home.html" class="cta-button cta-primary">
+                <i class="fas fa-user-plus"></i> Go to Dashboard
+            </a>
+            <a href="" class="cta-button cta-secondary">
+                <i class="fas fa-question-circle"></i> Learn How It Works
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 UNIDOCCS - All rights reserved. UwU</p>
+    </footer>
+
+    <script>
+        // JavaScript to control video section visibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreBtn = document.getElementById('learnMoreBtn');
+            const closeVideoBtn = document.getElementById('closeVideoBtn');
+            const videoSection = document.getElementById('videoSection');
+            
+            // Show video section when Learn More button is clicked
+            learnMoreBtn.addEventListener('click', function() {
+                videoSection.style.display = 'block';
+                // Smooth scroll to video section
+                videoSection.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Hide video section when Close button is clicked
+            closeVideoBtn.addEventListener('click', function() {
+                videoSection.style.display = 'none';
+                // Scroll back to hero section
+                document.querySelector('.hero').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

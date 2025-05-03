@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Management System - Dashboard</title>
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./images/unidoccs 1.png" alt="unidoccs1"></div>
+    </header>
+    <!--navbar-->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div>
+                <img src="./images/unidoccs-index.png" alt="unidoccs-logo"> 
+            </div>
+            <i class="fa-solid fa-bars toggle-btn"></i>
+            
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html"><span class="icon active"><i class="fa-solid fa-home"></i></span><span class="text active">Home</span></a></li>
+            <li><a href="./about.html"><span class="icon active"><i class="fa-solid fa-circle-info"></i></span><span class="text active">About</span></a></li>
+            <li><a href=""><span class="icon active"><i class="fa-solid fa-file"></i></span><span class="text active">Docs</span></a></li>
+            <li><a href=""><span class="icon active"><i class="fa-solid fa-circle-question"></i></span><span class="text active">Help</span></a></li>
+        </ul>
+    </div>
+    
+    <main>
+        <section class="user-info">
+            <div class="intro">
+                <h3>Welcome to your Dashboard <br> You Can Edit Your Information</h3>
+                <br>
+                <div class="auth-section">
+                    <a href="home.html" class="auth-btn back-btn"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back to Home</a>
+                    <button class="auth-btn save-btn" id="saveAllChanges"><i class="fa-solid fa-save"></i>&nbsp;Save All Changes</button>
+                </div>
+                <br>
+            </div>
+
+            <div class="identification">
+                <div class="id-card">
+                    <div class="id-header">
+                        <div class="id-title">User Identification</div>
+                        <div class="id-logo">UNIDOCCS</div>
+                    </div>
+                    <div class="id-content">
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <div class="editable-field">
+                                    <input type="text" id="userName" value="Anon" class="info-value">
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Address:</span>
+                                <div class="editable-field">
+                                    <input type="text" id="userAddress" value="123 Blockchain Street" class="info-value">
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Course:</span>
+                                <div class="editable-field">
+                                    <input type="text" id="userCourse" value="Computer Science" class="info-value">
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Student ID:</span>
+                                <div class="editable-field">
+                                    <input type="text" id="userStudentId" value="CS12345" class="info-value">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="id-photo">
+                            <img src="./images/profile-placeholder.png" alt="Student Photo" id="profileImage">
+                            <button class="change-photo-btn" id="changePhotoBtn"><i class="fa-solid fa-camera"></i></button>
+                        </div>
+                    </div>
+                    <div class="id-footer">
+                        <div class="blockchain-id">Public Address: 0x69C420EC69ab420b098defB751B7401B5f6d8976F</div>
+                        <div class="expiry">Created: 04/15/2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="documents">
+                <div class="documents-header">
+                    <h2>Credentials and Documents</h2>
+                    <div class="search-section">
+                        <input type="text" class="search-box" placeholder="Search documents...">
+                    </div>
+                </div>
+                
+                <div class="documents-grid">
+                    <div class="document-card upload-btn" id="uploadDocBtn">
+                        <i class="fa-solid fa-cloud-upload-alt fa-2x"></i>
+                        <h4>Upload New Document</h4>
+                        <p>Click to add a new document to your repository</p>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="action-buttons">
+                            <button class="edit-doc-btn" data-doc-id="1"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete-doc-btn" data-doc-id="1"><i class="fa-solid fa-trash-alt"></i></button>
+                        </div>
+                        <h4>Document 1</h4>
+                        <p>This is a sample document result</p>
+                        <div class="document-meta">
+                            <span>Type: PDF</span> |
+                            <span>Uploaded: 04/15/2025</span> |
+                            <span>Blockchain ID: bc123456</span>
+                        </div>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="action-buttons">
+                            <button class="edit-doc-btn" data-doc-id="2"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete-doc-btn" data-doc-id="2"><i class="fa-solid fa-trash-alt"></i></button>
+                        </div>
+                        <h4>Document 2</h4>
+                        <p>Another sample document result</p>
+                        <div class="document-meta">
+                            <span>Type: PDF</span> |
+                            <span>Uploaded: 04/15/2025</span> |
+                            <span>Blockchain ID: bc789012</span>
+                        </div>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="action-buttons">
+                            <button class="edit-doc-btn" data-doc-id="3"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete-doc-btn" data-doc-id="3"><i class="fa-solid fa-trash-alt"></i></button>
+                        </div>
+                        <h4>Document 3</h4>
+                        <p>Another sample document result</p>
+                        <div class="document-meta">
+                            <span>Type: PDF</span> |
+                            <span>Uploaded: 04/15/2025</span> |
+                            <span>Blockchain ID: bc345678</span>
+                        </div>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="action-buttons">
+                            <button class="edit-doc-btn" data-doc-id="4"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete-doc-btn" data-doc-id="4"><i class="fa-solid fa-trash-alt"></i></button>
+                        </div>
+                        <h4>Document 4</h4>
+                        <p>Another sample document result</p>
+                        <div class="document-meta">
+                            <span>Type: PDF</span> |
+                            <span>Uploaded: 04/15/2025</span> |
+                            <span>Blockchain ID: bc901234</span>
+                        </div>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="action-buttons">
+                            <button class="edit-doc-btn" data-doc-id="5"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete-doc-btn" data-doc-id="5"><i class="fa-solid fa-trash-alt"></i></button>
+                        </div>
+                        <h4>Document 5</h4>
+                        <p>Another sample document result</p>
+                        <div class="document-meta">
+                            <span>Type: PDF</span> |
+                            <span>Uploaded: 04/15/2025</span> |
+                            <span>Blockchain ID: bc567890</span>
+                        </div>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="action-buttons">
+                            <button class="edit-doc-btn" data-doc-id="6"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete-doc-btn" data-doc-id="6"><i class="fa-solid fa-trash-alt"></i></button>
+                        </div>
+                        <h4>Document 6</h4>
+                        <p>Another sample document result</p>
+                        <div class="document-meta">
+                            <span>Type: PDF</span> |
+                            <span>Uploaded: 04/15/2025</span> |
+                            <span>Blockchain ID: bc123890</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="id-notice">Your digital identity is securely stored on the blockchain.</p>
+        </section>
+    </main>
+    
+    <!-- Edit Document Modal -->
+    <div class="modal" id="editDocModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Edit Document</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="editDocForm">
+                <input type="hidden" id="editDocId">
+                <div class="form-group">
+                    <label for="editDocTitle">Document Title</label>
+                    <input type="text" id="editDocTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="editDocDescription">Description</label>
+                    <textarea id="editDocDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="editDocType">Document Type</label>
+                    <select id="editDocType">
+                        <option value="PDF">PDF</option>
+                        <option value="DOCX">DOCX</option>
+                        <option value="JPG">JPG</option>
+                        <option value="PNG">PNG</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="editDocFile">Replace File (Optional)</label>
+                    <input type="file" id="editDocFile">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Upload Document Modal -->
+    <div class="modal" id="uploadDocModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Upload New Document</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="uploadDocForm">
+                <div class="form-group">
+                    <label for="uploadDocTitle">Document Title</label>
+                    <input type="text" id="uploadDocTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="uploadDocDescription">Description</label>
+                    <textarea id="uploadDocDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="uploadDocType">Document Type</label>
+                    <select id="uploadDocType">
+                        <option value="PDF">PDF</option>
+                        <option value="DOCX">DOCX</option>
+                        <option value="JPG">JPG</option>
+                        <option value="PNG">PNG</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="uploadDocFile">Select File</label>
+                    <input type="file" id="uploadDocFile" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Upload Document</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Change Photo Modal -->
+    <div class="modal" id="changePhotoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Change Profile Photo</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="changePhotoForm">
+                <div class="form-group">
+                    <label for="uploadPhotoFile">Select New Photo</label>
+                    <input type="file" id="uploadPhotoFile" accept="image/*" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Update Photo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="modal" id="deleteConfirmModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Confirm Deletion</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this document? This action cannot be undone.</p>
+                <input type="hidden" id="docToDelete">
+            </div>
+            <div class="form-actions">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <button type="button" class="submit-btn" id="confirmDeleteBtn">Delete Document</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/dashboard.js"></script>
+
+</body>
+</html>
