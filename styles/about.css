@@ -25,6 +25,60 @@ body {
     box-sizing: border-box;
 }
 
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.faq-container p {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.faq-container p:hover {
+    transform: translateX(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container p strong,
+.faq-container p br + strong {
+    color: #2c3e50;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.faq-container ol {
+    padding-left: 20px;
+}
+
+.faq-container ol li {
+    margin-bottom: 10px;
+}
+
+/* Add some spacing before the footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
 .header {
     grid-column: 1 / -1;
     border-bottom: 2px solid #3498db;
