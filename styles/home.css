@@ -173,18 +173,18 @@ main {
     display: grid;
     grid-template-areas: 
     "intro intro"
-    "identification documents"
+    "parent-id-docs parent-id-docs"
     ;
 }
 .intro{
     grid-area: intro;
 }
-.id-card{
-    grid-area: identification;
+.parent-id-docs{
+    grid-area: parent-id-docs;
+    display: flex;
+    gap: 10px;
 }
-.documents{
-    grid-area: documents;
-}
+
 .documents-section {
     flex: 1; 
     background-color: white;
