@@ -183,6 +183,8 @@ main {
 .parent-id-docs{
     grid-area: parent-id-docs;
     display: flex;
+    width: 100%;
+    justify-content: center;
     gap: 10px;
 }
 
