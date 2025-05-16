@@ -213,19 +213,16 @@ main {
     display: grid;
     grid-template-areas: 
     "intro intro"
-    "identification documents"
+    "parent-id-docs parent-id-docs"
+    "p p"
     ;
 }
 
 .intro{
     grid-area: intro;
 }
-.id-card{
-    grid-area: identification;
-    position: relative;
-}
-.documents{
-    grid-area: documents;
+.parent-id-docs{
+  grid-area: parent-id-docs;
 }
 
 .documents-header {
@@ -449,6 +446,7 @@ main {
 }
 
 .id-notice {
+ grid-area: p;
     text-align: center;
     margin-top: 15px;
     color: #666;
