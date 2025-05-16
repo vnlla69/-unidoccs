@@ -42,147 +42,150 @@
                 <br>
             </div>
 
-            <div class="identification">
-                <div class="id-card">
-                    <div class="id-header">
-                        <div class="id-title">User Identification</div>
-                        <div class="id-logo">UNIDOCCS</div>
-                    </div>
-                    <div class="id-content">
-                        <div class="personal-info">
-                            <div class="info-item">
-                                <span class="info-label">Name:</span>
-                                <div class="editable-field">
-                                    <input type="text" id="userName" value="Anon" class="info-value">
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Address:</span>
-                                <div class="editable-field">
-                                    <input type="text" id="userAddress" value="123 Blockchain Street" class="info-value">
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Course:</span>
-                                <div class="editable-field">
-                                    <input type="text" id="userCourse" value="Computer Science" class="info-value">
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Student ID:</span>
-                                <div class="editable-field">
-                                    <input type="text" id="userStudentId" value="CS12345" class="info-value">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="id-photo">
-                            <img src="./images/profile-placeholder.png" alt="Student Photo" id="profileImage">
-                            <button class="change-photo-btn" id="changePhotoBtn"><i class="fa-solid fa-camera"></i></button>
-                        </div>
-                    </div>
-                    <div class="id-footer">
-                        <div class="blockchain-id">Public Address: 0x69C420EC69ab420b098defB751B7401B5f6d8976F</div>
-                        <div class="expiry">Created: 04/15/2025</div>
-                    </div>
-                </div>
-            </div>
+            <div class="parent-id-docs">
 
-            <div class="documents">
-                <div class="documents-header">
-                    <h2>Credentials and Documents</h2>
-                    <div class="search-section">
-                        <input type="text" class="search-box" placeholder="Search documents...">
+                <div class="identification">
+                    <div class="id-card">
+                        <div class="id-header">
+                            <div class="id-title">User Identification</div>
+                            <div class="id-logo">UNIDOCCS</div>
+                        </div>
+                        <div class="id-content">
+                            <div class="personal-info">
+                                <div class="info-item">
+                                    <span class="info-label">Name:</span>
+                                    <div class="editable-field">
+                                        <input type="text" id="userName" value="Anon" class="info-value">
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Address:</span>
+                                    <div class="editable-field">
+                                        <input type="text" id="userAddress" value="123 Blockchain Street" class="info-value">
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Course:</span>
+                                    <div class="editable-field">
+                                        <input type="text" id="userCourse" value="Computer Science" class="info-value">
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Student ID:</span>
+                                    <div class="editable-field">
+                                        <input type="text" id="userStudentId" value="CS12345" class="info-value">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="id-photo">
+                                <img src="./images/profile-placeholder.png" alt="Student Photo" id="profileImage">
+                                <button class="change-photo-btn" id="changePhotoBtn"><i class="fa-solid fa-camera"></i></button>
+                            </div>
+                        </div>
+                        <div class="id-footer">
+                            <div class="blockchain-id">Public Address: 0x69C420EC69ab420b098defB751B7401B5f6d8976F</div>
+                            <div class="expiry">Created: 04/15/2025</div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="documents-grid">
-                    <div class="document-card upload-btn" id="uploadDocBtn">
-                        <i class="fa-solid fa-cloud-upload-alt fa-2x"></i>
-                        <h4>Upload New Document</h4>
-                        <p>Click to add a new document to your repository</p>
-                    </div>
-                    
-                    <div class="document-card">
-                        <div class="action-buttons">
-                            <button class="edit-doc-btn" data-doc-id="1"><i class="fa-solid fa-pen"></i></button>
-                            <button class="delete-doc-btn" data-doc-id="1"><i class="fa-solid fa-trash-alt"></i></button>
-                        </div>
-                        <h4>Document 1</h4>
-                        <p>This is a sample document result</p>
-                        <div class="document-meta">
-                            <span>Type: PDF</span> |
-                            <span>Uploaded: 04/15/2025</span> |
-                            <span>Blockchain ID: bc123456</span>
+    
+                <div class="documents">
+                    <div class="documents-header">
+                        <h2>Credentials and Documents</h2>
+                        <div class="search-section">
+                            <input type="text" class="search-box" placeholder="Search documents...">
                         </div>
                     </div>
                     
-                    <div class="document-card">
-                        <div class="action-buttons">
-                            <button class="edit-doc-btn" data-doc-id="2"><i class="fa-solid fa-pen"></i></button>
-                            <button class="delete-doc-btn" data-doc-id="2"><i class="fa-solid fa-trash-alt"></i></button>
+                    <div class="documents-grid">
+                        <div class="document-card upload-btn" id="uploadDocBtn">
+                            <i class="fa-solid fa-cloud-upload-alt fa-2x"></i>
+                            <h4>Upload New Document</h4>
+                            <p>Click to add a new document to your repository</p>
                         </div>
-                        <h4>Document 2</h4>
-                        <p>Another sample document result</p>
-                        <div class="document-meta">
-                            <span>Type: PDF</span> |
-                            <span>Uploaded: 04/15/2025</span> |
-                            <span>Blockchain ID: bc789012</span>
+                        
+                        <div class="document-card">
+                            <div class="action-buttons">
+                                <button class="edit-doc-btn" data-doc-id="1"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-doc-btn" data-doc-id="1"><i class="fa-solid fa-trash-alt"></i></button>
+                            </div>
+                            <h4>Document 1</h4>
+                            <p>This is a sample document result</p>
+                            <div class="document-meta">
+                                <span>Type: PDF</span> |
+                                <span>Uploaded: 04/15/2025</span> |
+                                <span>Blockchain ID: bc123456</span>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="document-card">
-                        <div class="action-buttons">
-                            <button class="edit-doc-btn" data-doc-id="3"><i class="fa-solid fa-pen"></i></button>
-                            <button class="delete-doc-btn" data-doc-id="3"><i class="fa-solid fa-trash-alt"></i></button>
+                        
+                        <div class="document-card">
+                            <div class="action-buttons">
+                                <button class="edit-doc-btn" data-doc-id="2"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-doc-btn" data-doc-id="2"><i class="fa-solid fa-trash-alt"></i></button>
+                            </div>
+                            <h4>Document 2</h4>
+                            <p>Another sample document result</p>
+                            <div class="document-meta">
+                                <span>Type: PDF</span> |
+                                <span>Uploaded: 04/15/2025</span> |
+                                <span>Blockchain ID: bc789012</span>
+                            </div>
                         </div>
-                        <h4>Document 3</h4>
-                        <p>Another sample document result</p>
-                        <div class="document-meta">
-                            <span>Type: PDF</span> |
-                            <span>Uploaded: 04/15/2025</span> |
-                            <span>Blockchain ID: bc345678</span>
+                        
+                        <div class="document-card">
+                            <div class="action-buttons">
+                                <button class="edit-doc-btn" data-doc-id="3"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-doc-btn" data-doc-id="3"><i class="fa-solid fa-trash-alt"></i></button>
+                            </div>
+                            <h4>Document 3</h4>
+                            <p>Another sample document result</p>
+                            <div class="document-meta">
+                                <span>Type: PDF</span> |
+                                <span>Uploaded: 04/15/2025</span> |
+                                <span>Blockchain ID: bc345678</span>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="document-card">
-                        <div class="action-buttons">
-                            <button class="edit-doc-btn" data-doc-id="4"><i class="fa-solid fa-pen"></i></button>
-                            <button class="delete-doc-btn" data-doc-id="4"><i class="fa-solid fa-trash-alt"></i></button>
+                        
+                        <div class="document-card">
+                            <div class="action-buttons">
+                                <button class="edit-doc-btn" data-doc-id="4"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-doc-btn" data-doc-id="4"><i class="fa-solid fa-trash-alt"></i></button>
+                            </div>
+                            <h4>Document 4</h4>
+                            <p>Another sample document result</p>
+                            <div class="document-meta">
+                                <span>Type: PDF</span> |
+                                <span>Uploaded: 04/15/2025</span> |
+                                <span>Blockchain ID: bc901234</span>
+                            </div>
                         </div>
-                        <h4>Document 4</h4>
-                        <p>Another sample document result</p>
-                        <div class="document-meta">
-                            <span>Type: PDF</span> |
-                            <span>Uploaded: 04/15/2025</span> |
-                            <span>Blockchain ID: bc901234</span>
+                        
+                        <div class="document-card">
+                            <div class="action-buttons">
+                                <button class="edit-doc-btn" data-doc-id="5"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-doc-btn" data-doc-id="5"><i class="fa-solid fa-trash-alt"></i></button>
+                            </div>
+                            <h4>Document 5</h4>
+                            <p>Another sample document result</p>
+                            <div class="document-meta">
+                                <span>Type: PDF</span> |
+                                <span>Uploaded: 04/15/2025</span> |
+                                <span>Blockchain ID: bc567890</span>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="document-card">
-                        <div class="action-buttons">
-                            <button class="edit-doc-btn" data-doc-id="5"><i class="fa-solid fa-pen"></i></button>
-                            <button class="delete-doc-btn" data-doc-id="5"><i class="fa-solid fa-trash-alt"></i></button>
-                        </div>
-                        <h4>Document 5</h4>
-                        <p>Another sample document result</p>
-                        <div class="document-meta">
-                            <span>Type: PDF</span> |
-                            <span>Uploaded: 04/15/2025</span> |
-                            <span>Blockchain ID: bc567890</span>
-                        </div>
-                    </div>
-                    
-                    <div class="document-card">
-                        <div class="action-buttons">
-                            <button class="edit-doc-btn" data-doc-id="6"><i class="fa-solid fa-pen"></i></button>
-                            <button class="delete-doc-btn" data-doc-id="6"><i class="fa-solid fa-trash-alt"></i></button>
-                        </div>
-                        <h4>Document 6</h4>
-                        <p>Another sample document result</p>
-                        <div class="document-meta">
-                            <span>Type: PDF</span> |
-                            <span>Uploaded: 04/15/2025</span> |
-                            <span>Blockchain ID: bc123890</span>
+                        
+                        <div class="document-card">
+                            <div class="action-buttons">
+                                <button class="edit-doc-btn" data-doc-id="6"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-doc-btn" data-doc-id="6"><i class="fa-solid fa-trash-alt"></i></button>
+                            </div>
+                            <h4>Document 6</h4>
+                            <p>Another sample document result</p>
+                            <div class="document-meta">
+                                <span>Type: PDF</span> |
+                                <span>Uploaded: 04/15/2025</span> |
+                                <span>Blockchain ID: bc123890</span>
+                            </div>
                         </div>
                     </div>
                 </div>
