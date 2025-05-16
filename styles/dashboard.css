@@ -223,6 +223,7 @@ main {
 }
 .parent-id-docs{
   grid-area: parent-id-docs;
+ display:flex;
 }
 
 .documents-header {
